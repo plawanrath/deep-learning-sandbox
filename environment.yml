@@ -22,6 +22,9 @@ dependencies:
   - seaborn>=0.12.0
   - plotly
 
+  # Graph Processing & Visualization
+  - networkx>=3.0
+
   # Jupyter Environment
   - jupyter
   - jupyterlab
@@ -49,6 +52,11 @@ dependencies:
     - tiktoken  # OpenAI's tokenizer
     - einops  # tensor operations
     - wandb  # experiment tracking (optional)
+
+    # Graph Machine Learning
+    - torch-geometric  # Graph Neural Networks with PyTorch
+    - dgl  # Deep Graph Library (alternative GNN framework)
+    - sentence-transformers  # Pre-trained text embeddings for hybrid models
 
     # Code quality (optional but recommended)
     - black  # code formatting
