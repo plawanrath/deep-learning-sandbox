@@ -83,7 +83,7 @@ You should see `(base)` appear in your terminal prompt when conda is active.
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/plawanrath/deep-learning-sandbox.git
+   git clone git@github.com:plawanrath/deep-learning-sandbox.git
    cd deep-learning-sandbox
    ```
 
@@ -197,7 +197,7 @@ PyTorch will automatically use MPS when available.
 ## 🔄 Cloning to a New Machine
 
 ```bash
-git clone https://github.com/plawanrath/deep-learning-sandbox.git
+git clone git@github.com:plawanrath/deep-learning-sandbox.git
 cd deep-learning-sandbox
 ./setup.sh
 conda activate dl-sandbox

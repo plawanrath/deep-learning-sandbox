@@ -136,6 +136,7 @@ else:
 - Commit code regularly
 - **Never commit** datasets (data/) or models (models/)
 - Keep .gitignore updated for large files
+- **Use SSH for git operations** (not HTTPS) - the remote is configured as `git@github.com:plawanrath/deep-learning-sandbox.git`
 
 ## Important Notes
 
