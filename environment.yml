@@ -7,10 +7,10 @@ channels:
 dependencies:
   - python=3.11
 
-  # Core Deep Learning
-  - pytorch::pytorch>=2.0.0
-  - pytorch::torchvision
-  - pytorch::torchaudio
+  # Core Deep Learning (installed via pip for latest version with MPS support)
+  # - pytorch::pytorch>=2.0.0
+  # - pytorch::torchvision
+  # - pytorch::torchaudio
 
   # Scientific Computing & Data Manipulation
   - numpy>=1.24.0
@@ -41,11 +41,18 @@ dependencies:
   # Pip packages (not available in conda or better from pip)
   - pip
   - pip:
+    # PyTorch (via pip for latest version with security fixes)
+    - torch>=2.6.0
+    - torchvision
+    - torchaudio
+
     # Hugging Face Ecosystem (for transformers/LLM work)
     - transformers>=4.30.0
     - tokenizers>=0.13.0
     - datasets>=2.14.0
     - accelerate>=0.20.0
+    - evaluate  # Hugging Face evaluation metrics
+    - rouge_score  # ROUGE metric for summarization
 
     # Additional utilities
     - sentencepiece  # for tokenization
