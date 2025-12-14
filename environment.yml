@@ -64,6 +64,7 @@ dependencies:
     - torch-geometric  # Graph Neural Networks with PyTorch
     - dgl  # Deep Graph Library (alternative GNN framework)
     - sentence-transformers  # Pre-trained text embeddings for hybrid models
+    - faiss-cpu  # Facebook AI Similarity Search for efficient vector retrieval
 
     # Code quality (optional but recommended)
     - black  # code formatting
